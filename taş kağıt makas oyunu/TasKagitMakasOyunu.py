@@ -18,10 +18,6 @@ def rules(comp, rakip):
     else:
         return"hatalı tuşlama yaptınız."
 
-
-
-
-
 compscore = 0
 userscore = 0
 
