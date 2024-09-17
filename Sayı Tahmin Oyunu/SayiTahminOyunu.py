@@ -9,14 +9,14 @@ if int(a) == int(b):
 
 else:
     print("yanlış")
-    sayac = 3  #kullanıcıya 3 hak verilir. her yanlış bildiği seferde hakkı 1 azalır
+    sayac = 3 
     while(sayac > 1 ):
         print("kalan hak sayısı: " + str(sayac-1))
         sayac = sayac -1
-        c = input("Tuttuğum sayıyı tahmin et: ")
+        c = input("Tuttuğum sayıyı tahmin edin: ")
         
     if int(a) != int(b):
-        print("bilemedin tuttuğum sayı " + str(a) + " idi.") 
+        print("bilemediniz tuttuğum sayı " + str(a) + " idi.") 
 
 
     
