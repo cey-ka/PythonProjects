@@ -1,23 +1,25 @@
 import random
 
-a = random.randrange(10)
-b = input("1 den 10 a kadar bir sayı tuttum. Tuttuğum sayıyı tahmin et (3 hakkın var): ")
+a = random.randrange(1,10)
 
+print("\n\nSayı Tahmin Oyununa Hoşgeldin 3 Hakkın var\n\n")
 
-if int(a) == int(b):
-    print(str(b) + " benim tuttuğum sayıydı tebrik ederim kazandınız.")
+sayac = 3
+while(sayac > 0):
 
-else:
-    print("yanlış")
-    sayac = 3 
-    while(sayac > 1 ):
-        print("kalan hak sayısı: " + str(sayac-1))
-        sayac = sayac -1
-        c = input("Tuttuğum sayıyı tahmin edin: ")
-        
-    if int(a) != int(b):
-        print("bilemediniz tuttuğum sayı " + str(a) + " idi.") 
+    b = input("1 den 10 a kadar bir sayı tuttum. Tuttuğum sayıyı tahmin et: ")
+    if int(b) == a:
+        print(str(b) + " benim tuttuğum sayıydı tebrik ederim kazandın.")
+        break
 
+    else:
 
-    
+        if sayac == 1:
+            if int(b) != a:
+                print(f"bilemedin tuttuğum sayı: {a}")
+                break
 
+        else:
+            sayac -= 1
+            print("yanlış bildiniz.\nKalan hak sayısı:" + str(sayac))
+            b
